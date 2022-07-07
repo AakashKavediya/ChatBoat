@@ -1,0 +1,237 @@
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    
+    body {
+        background-color: whitesmoke;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 5px;
+        background-color: skyblue;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        color: #fff;
+        height: 10px;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        color: green;
+        background-color: rgb(0, 136, 255);
+        width: 8px;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        color: #fff;
+        height: 10px;
+    }
+    
+     ::-webkit-scrollbar-corner {
+        color: blue;
+        background-color: blue;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        color: #fff;
+        height: 10px;
+    }
+    
+     ::-webkit-scrollbar-button {
+        background-color: rgb(0, 183, 255);
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        color: #fff;
+        /* height: 10px; */
+    }
+    
+     ::-webkit-scrollbar-track-piece {
+        color: blue;
+        background-color: rgb(0, 183, 255);
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        color: #fff;
+        height: 10px;
+    }
+    /* -----MAIN---------------------------------------------------------- */
+    
+    main {
+        width: 75%;
+        float: right;
+        background: white no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    
+    main header {
+        height: 60px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: #fff;
+        border-bottom: 2px solid skyblue;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    main header #image img {
+        height: 40px;
+        width: 40px;
+        border-radius: 100px;
+        border: 1.5px solid #ededed;
+    }
+    
+    main header #image {
+        float: left;
+        width: max-content;
+        padding: 2px;
+    }
+    
+    main header #name #nameone {
+        font-family: 'Finlandica', sans-serif;
+        font-size: 18px;
+    }
+    
+    main header #name span {
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    main header #name {
+        width: max-content;
+        margin-left: 5px;
+        padding-left: 5px;
+    }
+    /* ----ASIDE-------------------------------------------------------------------- */
+    
+    aside {
+        width: 25%;
+        padding-right: 2px;
+        /* margin: 10px; */
+        min-height: 100vh;
+        background-color: #fff;
+        float: left;
+    }
+    
+    #search {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        border-bottom: 1.5px solid rgb(0, 183, 255);
+        padding: 8px;
+        margin: 2px;
+        color: gray;
+        font-size: 14px;
+        margin-bottom: 10px;
+        /* border-radius: 8px; */
+    }
+    
+    #search input {
+        outline: none;
+        border: none;
+        padding: 5px;
+        font-size: 14px;
+        color: gray;
+        padding-left: 5px;
+        width: 100%;
+    }
+    
+    aside #contactone a {
+        height: 70px;
+        width: 100%;
+        padding: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid skyblue;
+        display: flex;
+        align-items: center;
+        /* border-left: 5px solid skyblue; */
+    }
+    
+    aside #contactone a {
+        text-decoration: none;
+        color: #525252;
+    }
+    
+    aside #contactone #image1 img {
+        width: 45px;
+        height: 45px;
+        border-radius: 100px;
+        border: 1px solid #ededed;
+    }
+    
+    aside #contactone #image1 {
+        float: left;
+        width: max-content;
+        padding: 2px;
+        margin: 2px;
+    }
+    
+    aside #contactone #text {
+        margin-left: 5px;
+    }
+    
+    aside #contactone #text #nameone {
+        font-size: 15px;
+        font-family: 'Finlandica', sans-serif;
+    }
+    
+    aside #contactone #text #textone {
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    aside #title {
+        color: rgb(0, 183, 255);
+        font-family: 'Roboto', sans-serif;
+        padding: 8px;
+    }
+    
+    aside #flow {
+        height: 80vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    /* ----FOOTER------------------------------------ */
+    
+    footer {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        right: 0;
+        bottom: 0;
+        padding: 5px;
+        border: 2px solid #515151;
+    }
+    
+    footer input {
+        width: 94%;
+        padding: 5px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+    }
+    
+    footer button {
+        background-color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        width: 5%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+    }
+    /* ------HOVER ASIDE------------------------------------------------ */
+    
+    aside #contactone:hover {
+        background-color: rgba(0, 183, 255, 0.163);
+    }
